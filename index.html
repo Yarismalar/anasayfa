@@ -1,0 +1,31 @@
+<html>
+    <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+    body{font-family:Fredoka ; font-weight: 300;}
+    </style>
+</head>
+    <body>
+        <div class="root">
+
+        </div>
+    </body>
+    <script>
+        let pages = [
+            {name:"En güzel", link: "yaris.siparisci.com", desc:"Post paylaşarak ödül kazan!"},
+            {name:"Yarıştır", link: "yaristir.siparisci.com", desc:"Yarışmlarda birinciyi tahmin et, tüm puanları topla!  "},
+            {name:"Balance Tetris", link: "balancetris.siparisci.com", desc:"Tetris oyunu fakat zemin dengesiz  "},
+            {name:"Loserix", link: "loserix.com", desc:"Yatırdığın kazanır, fakat kaybeden hepsini kazanır! "},
+
+        ]
+        document.querySelector(".root").innerHTML = pages.map(page=>(`<div>
+            <h2>${page.name}</h2>
+            <a href='https://${page.link}'>${page.name} </a> <br />
+            <div>
+            ${page.desc}
+            </div>
+            </div>`))
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+</html>
